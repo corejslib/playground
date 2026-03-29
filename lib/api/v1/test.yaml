@@ -32,6 +32,9 @@ methods:
   download-api:
     title: Test download via API
     connectionType: http
+    params:
+      - name: path
+        schema: { type: string }
 
   send-notification:
     title: Send test notification
