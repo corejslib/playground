@@ -10,7 +10,9 @@ NODE_ENV=production npm install-clean
 pushd frontend
 NODE_ENV=development npm install-clean
 npm run build
-mv www /tmp && rm -rf * && mv /tmp/www .
+mv www /tmp
+rm -rf *
+mv /tmp/www .
 popd
 
 # cleanup
